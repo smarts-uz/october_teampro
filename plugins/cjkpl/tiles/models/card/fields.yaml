@@ -1,0 +1,167 @@
+tabs:
+    fields:
+        title:
+            label: Title
+            span: full
+            type: text
+            comment: '{{ card.title }} in TWIG'
+            tab: Misc
+        description:
+            label: Description
+            size: small
+            span: full
+            type: richeditor
+            comment: '{{ card.description | raw }} in TWIG'
+            tab: Misc
+        classes:
+            label: 'CSS Classes'
+            span: auto
+            type: text
+            comment: '{{ card.classes }} in TWIG'
+            tab: Misc
+        image:
+            label: Image
+            mode: image
+            span: right
+            type: mediafinder
+            comment: '{{ card.image|media }} in TWIG'
+            tab: Misc
+        _display_settings:
+            label: 'Display Settings'
+            span: full
+            type: section
+            tab: Misc
+        sort_order:
+            label: 'Sort order'
+            span: left
+            default: 0
+            type: number
+            tab: Misc
+        language:
+            label: Language
+            showSearch: true
+            span: right
+            type: dropdown
+            tab: Misc
+        is_visible:
+            label: 'Visible?'
+            span: right
+            type: switch
+            tab: Misc
+        section:
+            label: Section
+            span: auto
+            nameFrom: name
+            descriptionFrom: description
+            type: relation
+            tab: Misc
+            hidden: false
+        name:
+            label: Name
+            span: left
+            type: text
+            comment: 'For cards with personal info - {{ card.name }} in TWIG'
+            tab: Person
+        photo:
+            label: 'Person photo'
+            mode: image
+            span: right
+            type: mediafinder
+            comment: 'Personal photo etc - {{ card.photo | media }} in TWIG'
+            tab: Person
+        status:
+            label: Status
+            span: left
+            type: text
+            comment: 'Typically used for company, position, country, etc - {{ card.status }} in TWIG'
+            tab: Person
+        tags:
+            label: 'Tag list'
+            mode: string
+            separator: comma
+            customTags: true
+            useKey: false
+            span: left
+            type: taglist
+            comment: '{% for tag in tags %} {{ tag  }} {% endfor %}'
+            tab: 'Tags & URLs'
+        url:
+            label: URL
+            span: left
+            type: text
+            comment: '{{ card.url }} in TWIG. See also Content Page for auto-links'
+            tab: 'Tags & URLs'
+        target:
+            label: 'URL Target'
+            options:
+                _self: _self
+                _blank: _blank
+            showSearch: true
+            span: right
+            type: dropdown
+            comment: '{{ card.target }} in TWIG'
+            tab: 'Tags & URLs'
+        tags_url:
+            label: 'Extended tags with URLs'
+            prompt: 'Add new item'
+            span: full
+            type: repeater
+            comment: 'E.g. {% for tag in card.tags_url %} {{ tag.label }} {{ tag.url }} {{ tag.target }} {% endfor %}'
+            tab: 'Extended tags'
+            form:
+                fields:
+                    label:
+                        label: Tag
+                        span: auto
+                        type: text
+                    url:
+                        label: URL
+                        span: auto
+                        type: text
+                    target:
+                        label: Target
+                        span: auto
+                        showSearch: true
+                        options:
+                            _self: 'Same window'
+                            _blank: 'New window'
+                        type: dropdown
+
+
+        autolink_content:
+            label: 'Auto link content if present'
+            span: full
+            type: checkbox
+            comment: 'If content page defined, create automatic link to card content {{ card.url }}'
+            tab: 'Content Page'
+        content:
+            label: 'Card content'
+            span: full
+            size: giant
+            type: richeditor
+            commentAbove: 'Any clicklable card can have a sub-page with content details'
+            tab: 'Content Page'
+        custom_set:
+            label: 'Custom Set (e.g. Social Media)'
+            prompt: 'Add new item'
+            span: full
+            type: repeater
+            tab: 'Custom Sets'
+            form:
+                fields:
+                    icon:
+                        label: 'Icon (e.g. material icon)'
+                        span: left
+                        type: text
+                    url:
+                        label: URL
+                        span: right
+                        type: text
+                    label1:
+                        label: 'Label 1'
+                        span: auto
+                        type: text
+                    label2:
+                        label: 'Label 2'
+                        span: auto
+                        type: text

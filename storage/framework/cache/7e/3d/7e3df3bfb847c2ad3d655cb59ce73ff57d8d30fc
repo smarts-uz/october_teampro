@@ -1,0 +1,35 @@
+1610888642a:1:{s:10:"header.htm";a:6:{s:8:"fileName";s:10:"header.htm";s:7:"content";s:676:"[viewBag]
+==
+<header class="header container">
+    <a href="/"><img src="{{ 'assets/dist/images/logo.svg'|theme }}" alt="logo" class="logo"></a>
+    <nav class="nav">
+        <h2 class="hidden">Top navigation</h2>
+        <ul id="nav_menu" class="nav__menu">
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button id="nav_menu_button" class="nav__menu-button">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+</header>";s:5:"mtime";i:1610888037;s:6:"markup";s:661:"<header class="header container">
+    <a href="/"><img src="{{ 'assets/dist/images/logo.svg'|theme }}" alt="logo" class="logo"></a>
+    <nav class="nav">
+        <h2 class="hidden">Top navigation</h2>
+        <ul id="nav_menu" class="nav__menu">
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button id="nav_menu_button" class="nav__menu-button">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+</header>";s:4:"code";N;s:7:"viewBag";a:0:{}}}

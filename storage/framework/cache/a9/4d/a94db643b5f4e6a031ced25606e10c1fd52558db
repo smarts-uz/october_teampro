@@ -1,0 +1,7 @@
+1610888590a:1:{s:9:"index.htm";a:11:{s:8:"fileName";s:9:"index.htm";s:7:"content";s:161:"title = "Homepage"
+url = "/"
+layout = "default"
+meta_title = "Zenii Theme"
+meta_description = "A free flat landing page theme using Tailwindcss"
+is_hidden = 0
+==";s:5:"mtime";i:1610882326;s:6:"markup";s:0:"";s:4:"code";N;s:5:"title";s:8:"Homepage";s:3:"url";s:1:"/";s:6:"layout";s:7:"default";s:10:"meta_title";s:11:"Zenii Theme";s:16:"meta_description";s:48:"A free flat landing page theme using Tailwindcss";s:9:"is_hidden";s:1:"0";}}

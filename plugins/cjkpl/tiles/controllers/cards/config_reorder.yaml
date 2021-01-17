@@ -1,0 +1,8 @@
+title: Reorder Cards
+
+# Attribute name
+nameFrom: title
+
+modelClass: Cjkpl\Tiles\Models\Card
+toolbar:
+    buttons: reorder_toolbar
